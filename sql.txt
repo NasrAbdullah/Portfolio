@@ -1,0 +1,15 @@
+ declare                         
+ day varchar2(20);                                                   
+ begin                           
+ day := 'Sat';       
+ day := 'Mon';    
+ day := 'Wed';                                     
+case day
+when 'Sat' then dbms_output.put_line('Saturday');
+when 'Mon' then dbms_output.put_line('Monday');
+when 'Wed' then dbms_output.put_line('Wednesday');
+else 
+dbms_output.put_line('Week Day');
+ end case;
+end;                            
+                         
